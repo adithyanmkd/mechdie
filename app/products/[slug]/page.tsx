@@ -78,7 +78,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
         {/* Main Product Layout: 2 Columns */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left Column: Image Gallery */}
-          <div className="lg:col-span-6 sticky top-28">
+          <div className="lg:col-span-6 lg:sticky lg:top-28">
             <ProductGallery
               name={product.name}
               category={product.category}

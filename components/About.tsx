@@ -25,7 +25,7 @@ export default function About() {
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % SHOWCASE_PRODUCTS.length);
-    }, 4000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [isPaused]);
@@ -162,9 +162,8 @@ export default function About() {
                     type="button"
                     onClick={() => setCurrentIndex(idx)}
                     aria-label={`Go to slide ${idx + 1}`}
-                    className={`h-1.5 rounded-full transition-all duration-300 ${
-                      idx === currentIndex ? "w-6 bg-brand" : "w-1.5 bg-[#D1CDED]"
-                    }`}
+                    className={`h-1.5 rounded-full transition-all duration-300 bg-red ${idx === currentIndex ? "w-6 bg-brand" : "w-1.5 bg-[#D1CDED]"
+                      }`}
                   />
                 ))}
               </div>
