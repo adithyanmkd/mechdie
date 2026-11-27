@@ -96,7 +96,7 @@ export default function Navbar() {
             {/* Enlarged Logo Icon Container */}
             <div className="relative h-12 w-12 sm:h-14 sm:w-14 md:size-18 rounded-xl bg-brand flex items-center justify-center p-1.5 shadow-card group-hover:bg-brand-hover group-hover:scale-105 transition-all duration-200 shrink-0">
               <Image
-                src="/logo.svg"
+                src="/Logo.svg"
                 alt="MECH & DIE"
                 width={64}
                 height={64}
