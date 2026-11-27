@@ -40,6 +40,10 @@ export interface SiteConfig {
   footer: {
     copyright: string;
   };
+  social: {
+    instagram: string;
+    facebook: string;
+  };
 }
 
 export const siteConfig: SiteConfig = {
@@ -52,8 +56,8 @@ export const siteConfig: SiteConfig = {
 
   contact: {
     india: {
-      display: "+91 85477 70761",
-      raw: "+91 85477 70761",
+      display: "+91 85 472 70 761",
+      raw: "+91 85 472 70 761",
       tel: "+918547270761",
       whatsappNumber: "918547270761",
     },
@@ -98,5 +102,10 @@ export const siteConfig: SiteConfig = {
 
   footer: {
     copyright: "© 2026 MECH & DIE. All rights reserved.",
+  },
+
+  social: {
+    instagram: "https://www.instagram.com/mechanddie",
+    facebook: "https://www.facebook.com/mechanddie",
   },
 };

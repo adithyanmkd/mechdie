@@ -73,11 +73,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-200 bg-white/95 backdrop-blur-md ${
-        scrolled
-          ? "border-b border-[#EBEBF0] shadow-subtle py-3"
-          : "border-b border-transparent py-4 sm:py-5"
-      }`}
+      className={`sticky top-0 z-50 w-full transition-all duration-200 bg-white/95 backdrop-blur-md ${scrolled
+        ? "border-b border-[#EBEBF0] shadow-subtle py-3"
+        : "border-b border-transparent py-4 sm:py-5"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
@@ -95,9 +94,9 @@ export default function Navbar() {
             aria-label="MECH & DIE Home"
           >
             {/* Enlarged Logo Icon Container */}
-            <div className="relative h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 rounded-xl bg-brand flex items-center justify-center p-1.5 shadow-card group-hover:bg-brand-hover group-hover:scale-105 transition-all duration-200 shrink-0">
+            <div className="relative h-12 w-12 sm:h-14 sm:w-14 md:size-18 rounded-xl bg-brand flex items-center justify-center p-1.5 shadow-card group-hover:bg-brand-hover group-hover:scale-105 transition-all duration-200 shrink-0">
               <Image
-                src="/logo-purple.jpg"
+                src="/logo.svg"
                 alt="MECH & DIE"
                 width={64}
                 height={64}
@@ -127,11 +126,10 @@ export default function Navbar() {
                   key={item.id}
                   href={href}
                   onClick={(e) => handleNavClick(e, item.id)}
-                  className={`px-4 py-2 text-sm font-semibold rounded-md transition-all duration-150 relative ${
-                    isActive
-                      ? "text-brand bg-brand-light font-bold"
-                      : "text-dark/80 hover:text-brand hover:bg-[#F5F5F7]"
-                  }`}
+                  className={`px-4 py-2 text-sm font-semibold rounded-md transition-all duration-150 relative ${isActive
+                    ? "text-brand bg-brand-light font-bold"
+                    : "text-dark/80 hover:text-brand hover:bg-[#F5F5F7]"
+                    }`}
                 >
                   {item.label}
                   {isActive && (
@@ -181,11 +179,10 @@ export default function Navbar() {
                 key={item.id}
                 href={href}
                 onClick={(e) => handleNavClick(e, item.id)}
-                className={`block px-3.5 py-3 rounded-lg text-base font-semibold transition-colors ${
-                  isActive
-                    ? "text-brand bg-brand-light font-bold"
-                    : "text-dark hover:text-brand hover:bg-[#F5F5F7]"
-                }`}
+                className={`block px-3.5 py-3 rounded-lg text-base font-semibold transition-colors ${isActive
+                  ? "text-brand bg-brand-light font-bold"
+                  : "text-dark hover:text-brand hover:bg-[#F5F5F7]"
+                  }`}
               >
                 {item.label}
               </Link>
