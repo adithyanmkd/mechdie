@@ -106,6 +106,6 @@ export const siteConfig: SiteConfig = {
 
   social: {
     instagram: "https://www.instagram.com/mechanddie",
-    facebook: "https://www.facebook.com/mechanddie",
+    facebook: "https://www.facebook.com/share/1FXktr3Gyv/?ref=1",
   },
 };
